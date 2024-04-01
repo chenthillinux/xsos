@@ -45,12 +45,12 @@ How to use this script :-
 kindly download the  script o add execute permission to download file and trigger as the script as given below .
 
 For Red Hat:
-python3 redhat_xsosreport_analysis.py sosreport-RHEL8LAB-2023-01-30-qxhbofe.tar.xz
+# python3 redhat_xsosreport_analysis.py sosreport-RHEL8LAB-2023-01-30-qxhbofe.tar.xz
 
 For Ubuntu (Use Ubuntu 20.04 ):
-python3 redhat_xsosreport_analysis.py sosreport-ubuntu22node2-2024-03-13-yktkzek.tar
+# python3 redhat_xsosreport_analysis.py sosreport-ubuntu22node2-2024-03-13-yktkzek.tar
 
 For SuSE:
-python3 suse_xsupport_config_analysis.py scc_suse15sp4lab_240319_1738.txz
+# python3 suse_xsupport_config_analysis.py scc_suse15sp4lab_240319_1738.txz
 
 
