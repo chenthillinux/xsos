@@ -54,3 +54,4 @@ For SuSE:
 # python3 suse_xsupport_config_analysis.py scc_suse15sp4lab_240319_1738.txz
 
 
+
