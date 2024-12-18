@@ -22,7 +22,7 @@ while true; do
   echo "--------- memory of individual process time ------------" >> $OUTPUT_FILENAME
   ps -eo size,pid,user,command --sort -size |awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' |cut -d "" -f2 | head -n 500  >> $OUTPUT_FILENAME
   echo "-------- process calculated for RSS memory consumption ------" >> $OUTPUT_FILENAME
-  ps -eo user,pid,ppid,cmd,pmem,rss --no-headers --sort=-rss | awk '{if ($2 ~ /^[0-9]+$/ && $6/1024 >= 1) {printf "PID: %s, PPID: %s, Memory consumed (RSS): %.2f MB, Command: ", $2, $3, $6/1024; for (i=4; i<=NF; i++) printf "%s ", $i; printf "\n"}}'
+  ps -eo user,pid,ppid,cmd,pmem,rss --no-headers --sort=-rss | awk '{if ($2 ~ /^[0-9]+$/ && $6/1024 >= 1) {printf "PID: %s, PPID: %s, Memory consumed (RSS): %.2f MB, Command: ", $2, $3, $6/1024; for (i=4; i<=NF; i++) printf "%s ", $i; printf "\n"}}' >> $OUTPUT_FILENAME
   echo "--------- N/W Info state ------------" >> $OUTPUT_FILENAME
   ip addr show >> $OUTPUT_FILENAME
   echo "--------- Netstat ------------" >> $OUTPUT_FILENAME
